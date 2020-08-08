@@ -1,0 +1,62 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+/content
+# Only exists if Bazel was run
+/bazel-out
+
+/config
+/src/lib/ai/python-server/__pycache__
+/logs
+
+# dependencies
+/node_modules
+/custom_node_modules/**/node_modules
+
+/startuplogs
+/test
+
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+/logs
+/config
+
+# System Files
+.DS_Store
+Thumbs.db
+config/config.json
+config/config.json
+src/lib/ai/python-server/__pycache__/tracker.cpython-37.pyc
+src/lib/ai/python-server/__pycache__/process_detections.cpython-37.pyc
+src/lib/ai/python-server/__pycache__/helpers.cpython-37.pyc

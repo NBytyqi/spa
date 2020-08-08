@@ -1,0 +1,62 @@
+<!doctype html>
+   <html>
+      <head>
+         <meta charset="utf-8">
+         <title>PDF Result Template</title>
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style>
+
+
+</style>
+         <body>
+            <div class="p-1">
+            <div style="page-break-after: always;" >
+                <h1 class="mt-2 text-center">Detailed Report</h1>
+
+            <div class="mt-1 p-1">
+         <h4 style="line-height:normal;margin:5px 0">Printing events from: {{eventsFrom}} </h4>
+         <h4 style="line-height:normal;margin:5px 0">Printing events to: {{eventsTo}} </h4>
+         <h4 style="line-height:normal;margin:5px 0">No. Of selected events: {{nrOfEvents}} of {{totalOfEvents}} events </h3>
+         <h4 style="line-height:normal;margin:5px 0">No. Of pages: {{nrOfPages}} Page(s) </h4>
+         <h4 style="line-height:normal;margin:5px 0">Printing user: {{printingUser}} </h4>
+         <h4 style="line-height:normal;margin:5px 0">Printing time: {{time}}</h4>
+            </div>
+
+            <table class="table table-bordered mt-3">
+                <thead>
+                  <tr>
+
+                    <th scope="col" class="font-weight-bold">IMG</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Gate</th>
+                    <th scope="col">Plate</th>
+                    <th scope="col">User</th>
+                    <th scope="col">Blacklisted</th>
+                    <th scope="col">Override</th>
+                    <th scope="col">Approve</th>
+                    <th scope="col">Deny</th>
+                  </tr>
+                </thead>
+                <tbody class="dik">
+                 
+                   {{#each demi}}
+      <tr> {{{this.data}}} </tr>
+     {{/each}}
+                </tbody>
+              </table>
+            </div>
+
+
+            {{#each demi2}}
+             {{{this.data}}} 
+           {{/each}}
+
+
+         </div>
+
+         </body>
+
+
+
+
+   </html>
